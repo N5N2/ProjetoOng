@@ -1,0 +1,225 @@
+/* -- ESTILOS PARA O FORMULÁRIO DE CADASTRO -- */
+.formulario-cadastro {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--card-light);
+    padding: 3rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.grupo-formulario {
+    border: 2px solid var(--bg-light);
+    border-radius: var(--radius);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background: rgba(103, 219, 99, 0.05);
+}
+
+.grupo-formulario legend {
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    color: var(--accent);
+}
+
+.campo {
+    margin-bottom: 1.5rem;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--text-light);
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid var(--bg-light);
+    border-radius: var(--radius);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: var(--card-light);
+    color: var(--text-light);
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(103, 219, 99, 0.1);
+}
+
+.campo-duplo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.campo-triplo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.campo-checkbox {
+    margin-bottom: 1.5rem;
+}
+
+.checkboxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.checkbox:hover {
+    background: rgba(103, 219, 99, 0.1);
+}
+
+.checkbox input[type="checkbox"] {
+    width: auto;
+}
+
+.checkbox-termos {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.checkbox-termos input[type="checkbox"] {
+    width: auto;
+    margin-top: 0.2rem;
+}
+
+.botoes-formulario {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.btn-secundario {
+    background: var(--bg-light) !important;
+    color: var(--text-light) !important;
+}
+
+.btn-secundario:hover {
+    background: var(--text-light) !important;
+    color: var(--bg-light) !important;
+}
+
+/* -- CORREÇÕES PARA TEMA ESCURO -- */
+body.dark-theme .formulario-cadastro {
+    background: var(--card-dark);
+    color: var(--text-dark);
+}
+
+body.dark-theme .grupo-formulario {
+    border-color: var(--bg-dark);
+    background: rgba(103, 219, 99, 0.1);
+}
+
+body.dark-theme .campo label {
+    color: var(--text-dark);
+}
+
+body.dark-theme .campo input,
+body.dark-theme .campo select,
+body.dark-theme .campo textarea {
+    background: var(--card-dark);
+    border-color: var(--bg-dark);
+    color: var(--text-dark) !important;
+}
+
+body.dark-theme .campo input::placeholder,
+body.dark-theme .campo textarea::placeholder {
+    color: rgba(241, 245, 249, 0.6);
+}
+
+body.dark-theme .campo input:focus,
+body.dark-theme .campo select:focus,
+body.dark-theme .campo textarea:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(103, 219, 99, 0.2);
+}
+
+body.dark-theme .btn-secundario {
+    background: var(--bg-dark) !important;
+    color: var(--text-dark) !important;
+    border: 2px solid var(--accent);
+}
+
+body.dark-theme .btn-secundario:hover {
+    background: var(--accent) !important;
+    color: var(--bg-dark) !important;
+}
+
+/* -- Garantir que o texto dentro dos inputs seja visível no tema escuro -- */
+body.dark-theme input,
+body.dark-theme select,
+body.dark-theme textarea {
+    color: var(--text-dark) !important;
+}
+
+/* -- Placeholders com cor mais clara no tema escuro -- */
+body.dark-theme ::placeholder {
+    color: rgba(241, 245, 249, 0.5) !important;
+}
+
+/* -- Estilo específico para os checkboxes no tema escuro -- */
+body.dark-theme .checkbox:hover {
+    background: rgba(103, 219, 99, 0.15);
+}
+
+body.dark-theme .checkbox-termos {
+    color: var(--text-dark);
+}
+
+/* -- RESPONSIVIDADE DO FORMULÁRIO -- */
+@media (max-width: 768px) {
+    .formulario-cadastro {
+        padding: 1.5rem;
+    }
+
+    .campo-duplo,
+    .campo-triplo {
+        grid-template-columns: 1fr;
+    }
+
+    .checkboxes {
+        grid-template-columns: 1fr;
+    }
+
+    .botoes-formulario {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .grupo-formulario {
+        padding: 1rem;
+    }
+
+    .formulario-cadastro {
+        padding: 1rem;
+    }
+}
