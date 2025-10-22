@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - ONG Conecta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%2367db63'/><circle cx='35' cy='35' r='15' fill='white'/><circle cx='65' cy='65' r='15' fill='white'/><path d='M45,45 L55,55' stroke='white' stroke-width='8' stroke-linecap='round'/></svg>">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- BOTÃO TOGGLE TEMA -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema claro/escuro">🌓</button>
+
+    <!-- CABEÇALHO COM LOGO E MENU -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">ONG<span>Conecta</span></div>
+            <nav aria-label="Navegação principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="index.html#sobre">Sobre</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+        <!-- SEÇÃO VOLUNTARIADO -->
+        <section class="hero">
+            <div class="container">
+                <h1>Seja um Voluntário</h1>
+                <p>
+                    Sua energia e talento podem transformar vidas. Encontre oportunidades 
+                    de voluntariado que combinam com seu perfil e disponibilidade.
+                </p>
+            </div>
+        </section>
+
+        <!-- COMO FUNCIONA O VOLUNTARIADO -->
+        <section id="como-funciona">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Como Ser Voluntário</h2>
+                    <p>4 passos simples para fazer a diferença</p>
+                </div>
+                
+                <div class="passos-voluntariado">
+                    <div class="passo">
+                        <div class="passo-numero">1</div>
+                        <h3>Escolha um Projeto</h3>
+                        <p>Conheça nossas iniciativas e selecione aquela que mais combina com suas habilidades e interesses.</p>
+                    </div>
+                    
+                    <div class="passo">
+                        <div class="passo-numero">2</div>
+                        <h3>Faça seu Cadastro</h3>
+                        <p>Preencha o formulário de voluntário com seus dados e disponibilidade.</p>
+                    </div>
+                    
+                    <div class="passo">
+                        <div class="passo-numero">3</div>
+                        <h3>Participe do Treinamento</h3>
+                        <p>Receba orientações sobre o projeto e conheça nossa equipe.</p>
+                    </div>
+                    
+                    <div class="passo">
+                        <div class="passo-numero">4</div>
+                        <h3>Comece a Atuar</h3>
+                        <p>Junte-se a nós e faça parte dessa transformação social.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE DOAÇÕES -->
+        <section id="doacoes" class="bg-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Como Doar</h2>
+                    <p>Várias formas de apoiar nossas causas</p>
+                </div>
+                
+                <div class="formas-doacao">
+                    <div class="forma-doacao">
+                        <div class="icone-doacao" aria-hidden="true">💳</div>
+                        <h3>Doação Online</h3>
+                        <p>Faça uma doação rápida e segura via cartão de crédito ou PIX.</p>
+                        <button class="btn" id="doarOnline">Doar Agora</button>
+                    </div>
+                    
+                    <div class="forma-doacao">
+                        <div class="icone-doacao" aria-hidden="true">🏦</div>
+                        <h3>Transferência Bancária</h3>
+                        <p>Realize transferência para nossa conta corrente.</p>
+                        <p><strong>Banco: 001 • Ag: 1234 • C/C: 56789-0</strong></p>
+                    </div>
+                    
+                    <div class="forma-doacao">
+                        <div class="icone-doacao" aria-hidden="true">📦</div>
+                        <h3>Doação de Materiais</h3>
+                        <p>Doe alimentos, roupas, livros ou outros itens necessários.</p>
+                        <button class="btn" id="verItens">Ver Itens Necessários</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERIA DE ATIVIDADES -->
+        <section id="galeria">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Nossas Atividades</h2>
+                    <p>Veja o impacto do trabalho dos nossos voluntários</p>
+                </div>
+                
+                <div class="galeria-atividades">
+                    <div class="atividade">
+                        <div class="project-image">
+                            <img src="img/educacao.jpg" alt="Voluntários dando aula de reforço para crianças">
+                        </div>
+                        <div class="atividade-info">
+                            <h3>Aulas de Reforço</h3>
+                            <p>Voluntários ajudando crianças com dificuldades escolares</p>
+                        </div>
+                    </div>
+                    
+                    <div class="atividade">
+                        <div class="project-image">
+                            <img src="img/meioambiente.jpg" alt="Mutirão de limpeza em área verde">
+                        </div>
+                        <div class="atividade-info">
+                            <h3>Mutirão Ambiental</h3>
+                            <p>Limpeza e recuperação de áreas verdes da comunidade</p>
+                        </div>
+                    </div>
+                    
+                    <div class="atividade">
+                        <div class="project-image">
+                            <img src="img/saude.jpg" alt="Ação de saúde comunitária">
+                        </div>
+                        <div class="atividade-info">
+                            <h3>Ação de Saúde</h3>
+                            <p>Atendimento básico de saúde para comunidades carentes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DEPOIMENTOS -->
+        <section id="depoimentos" class="bg-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Depoimentos</h2>
+                    <p>O que nossos voluntários dizem</p>
+                </div>
+                
+                <div class="depoimentos-grid">
+                    <div class="depoimento">
+                        <div class="depoimento-texto">
+                            "Ser voluntário na ONG Conecta transformou minha vida. Ver o sorriso das crianças nas aulas de reforço não tem preço!"
+                        </div>
+                        <div class="depoimento-autor">
+                            <strong>Maria Silva</strong>
+                            <span>Voluntária há 2 anos</span>
+                        </div>
+                    </div>
+                    
+                    <div class="depoimento">
+                        <div class="depoimento-texto">
+                            "A experiência como voluntário me mostrou que pequenas ações podem gerar grandes mudanças na comunidade."
+                        </div>
+                        <div class="depoimento-autor">
+                            <strong>João Santos</strong>
+                            <span>Voluntário há 1 ano</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer id="contato">
+        <div class="container">
+            <div class="footer-content">
+                
+                <!-- SEÇÃO CONTATO -->
+                <div class="footer-section">
+                    <h3><span aria-hidden="true">📞</span> Contato</h3>
+                    <ul>
+                        <li><span aria-hidden="true">📧</span> Email: <span class="contato-item">contato@ongconecta.org</span></li>
+                        <li><span aria-hidden="true">📞</span> Telefone: <span class="contato-item">(11) 3456-7890</span></li>
+                        <li><span aria-hidden="true">📍</span> Endereço: <span class="contato-item">Rua das Causas Sociais, 123 - São Paulo, SP</span></li>
+                    </ul>
+                </div>
+                
+                <!-- SEÇÃO LINKS RÁPIDOS -->
+                <div class="footer-section">
+                    <h3><span aria-hidden="true">🔗</span> Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="index.html#sobre">Sobre Nós</a></li>
+                        <li><a href="projetos.html">Voluntariado</a></li>
+                        <li><a href="cadastro.html">Cadastre-se</a></li>
+                    </ul>
+                </div>
+                
+                <!-- SEÇÃO REDES SOCIAIS -->
+                <div class="footer-section">
+                    <h3><span aria-hidden="true">🌐</span> Redes Sociais</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com" target="_blank" rel="noopener"><span aria-hidden="true">📘</span> Facebook</a></li>
+                        <li><a href="https://www.instagram.com" target="_blank" rel="noopener"><span aria-hidden="true">📷</span> Instagram</a></li>
+                        <li><a href="https://www.twitter.com" target="_blank" rel="noopener"><span aria-hidden="true">🐦</span> Twitter</a></li>
+                        <li><a href="https://www.linkedin.com" target="_blank" rel="noopener"><span aria-hidden="true">💼</span> LinkedIn</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+            <!-- DIREITOS AUTORAIS -->
+            <div class="copyright">
+                <p>&copy; 2024 ONG Conecta. Todos os direitos reservados.</p>
+            </div>
+            
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
+    <script>
+        // Scripts específicos da página de projetos
+        document.getElementById('doarOnline')?.addEventListener('click', function() {
+            alert('Sistema de doações em desenvolvimento');
+        });
+        
+        document.getElementById('verItens')?.addEventListener('click', function() {
+            alert('Entre em contato para combinar a doação');
+        });
+    </script>
+</body>
+</html>
