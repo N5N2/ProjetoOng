@@ -59,7 +59,7 @@ A **ONG Conecta** é uma plataforma web completa desenvolvida para conectar volu
 - **ViaCEP** - API para busca de endereços
 - **SVG** - Ícones e elementos gráficos
 
-### Link para acessar o projeto -> https://n5n2.github.io/ProjectOng/
+### Link para acessar o projeto -> https://n5n2.github.io/ProjetoOng/
 ### Linkedin -> https://www.linkedin.com/in/veene
 
 (Projeto criado para atividade universitária)
